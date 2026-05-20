@@ -97,7 +97,7 @@ export default function Home() {
                 CREATORS
               </span>
 
-              <span className="block text-[110px]">
+              <span className="block text-[110px] whitespace-nowrap">
                 <span className="text-white">TO THE </span>
                 <span className="text-[#caa85d]">WORLD</span>
               </span>
