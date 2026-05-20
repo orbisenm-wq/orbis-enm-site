@@ -195,7 +195,5 @@ return ( <main className="bg-black text-white overflow-hidden">
     </div>
   </section>
 </main>
-```
-
 )
 }
