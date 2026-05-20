@@ -8,7 +8,6 @@ import {
   Megaphone,
   Radio,
   Globe2,
-  ShieldCheck,
 } from 'lucide-react'
 
 const business = [
@@ -97,7 +96,7 @@ export default function Home() {
         <div className="relative z-10 mx-auto flex w-full max-w-[1600px] items-center justify-between px-10 pt-40">
           
           {/* LEFT TEXT */}
-          <div className="max-w-[700px]">
+          <div className="max-w-[760px]">
             <div className="mb-10 flex items-center gap-5">
               <div className="h-[1px] w-24 bg-[#caa85d]" />
               <span className="text-[18px] tracking-[6px] text-[#caa85d]">
@@ -115,8 +114,11 @@ export default function Home() {
                 CREATORS
               </div>
 
-              <div className="text-[110px] text-white">
-                TO THE{' '}
+              <div className="flex items-end gap-6 whitespace-nowrap text-[110px]">
+                <span className="text-white">
+                  TO THE
+                </span>
+
                 <span className="text-[#caa85d]">
                   WORLD
                 </span>
