@@ -46,41 +46,32 @@ const business = [
 export default function Home() {
   return (
     <main className="bg-black text-white overflow-hidden">
-      {/* HEADER */}
-      <header className="fixed top-0 left-0 z-50 w-full border-b border-[#1a1a1a] bg-black/80 backdrop-blur">
-        <div className="mx-auto flex max-w-[1600px] items-center justify-between px-10 py-5">
-          
-          {/* LOGO */}
+      <header className="fixed top-0 left-0 z-50 w-full border-b border-[#1a1a1a] bg-black/85 backdrop-blur">
+        <div className="mx-auto flex max-w-[1600px] items-center justify-between px-10 py-4">
           <div className="flex items-center">
             <img
               src="/orbis-logo-horizontal.png"
               alt="ORBIS ENM"
-              className="h-[118px] w-auto object-contain brightness-125 contrast-125"
+              className="h-[82px] w-auto object-contain brightness-125 contrast-125"
             />
           </div>
 
-          {/* MENU */}
           <nav className="hidden gap-16 text-[15px] font-semibold tracking-[3px] md:flex">
-            <a href="#home" className="text-[#caa85d]">
-              HOME
-            </a>
+            <a href="#home" className="text-[#caa85d]">HOME</a>
             <a href="#company">COMPANY</a>
             <a href="#business">BUSINESS</a>
             <a href="#creators">CREATORS</a>
             <a href="#contact">CONTACT</a>
           </nav>
 
-          {/* MENU ICON */}
           <div className="text-[#caa85d] text-4xl">≡</div>
         </div>
       </header>
 
-      {/* HERO */}
       <section
         id="home"
         className="relative flex min-h-screen items-center overflow-hidden border-b border-[#1a1a1a]"
       >
-        {/* BACKGROUND IMAGE */}
         <div className="absolute inset-0 overflow-hidden opacity-80">
           <img
             src="/stage-bg.png"
@@ -89,152 +80,76 @@ export default function Home() {
           />
         </div>
 
-        {/* DARK OVERLAY */}
         <div className="absolute inset-0 bg-black/55" />
 
-        {/* CONTENT */}
-        <div className="relative z-10 mx-auto flex w-full max-w-[1600px] items-center justify-between px-10 pt-40">
-          
-          {/* LEFT TEXT */}
-          <div className="max-w-[760px]">
-            <div className="mb-10 flex items-center gap-5">
+        <div className="relative z-10 mx-auto grid w-full max-w-[1600px] grid-cols-1 gap-16 px-10 pt-[140px] pb-[100px] lg:grid-cols-2">
+          <motion.div
+            initial={{ opacity: 0, y: 70 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="flex flex-col justify-center"
+          >
+            <div className="mb-10 flex items-center gap-6">
               <div className="h-[1px] w-24 bg-[#caa85d]" />
-              <span className="text-[18px] tracking-[6px] text-[#caa85d]">
+              <span className="text-[16px] tracking-[4px] text-[#caa85d]">
                 ENTERTAINMENT & MEDIA
               </span>
             </div>
 
-            <motion.h1
-              initial={{ opacity: 0, y: 60 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-              className="leading-[0.95] font-black tracking-[-4px]"
-            >
-              <div className="text-[110px] text-white">
-                CREATORS
-              </div>
-
-              <div className="flex items-end gap-6 whitespace-nowrap text-[110px]">
-                <span className="text-white">
-                  TO THE
-                </span>
-
-                <span className="text-[#caa85d]">
-                  WORLD
-                </span>
-              </div>
-            </motion.h1>
-
-            <motion.p
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 1 }}
-              className="mt-12 text-[22px] leading-[2] text-gray-200"
-            >
-              우리는 크리에이터의 가능성을 발견하고,
+            <h1 className="text-[92px] font-black leading-[0.95] tracking-[-4px]">
+              CREATORS
               <br />
-              성장과 수익, 글로벌 확장까지 함께 설계하는
-              <br />
-              <span className="font-bold text-[#caa85d]">
+              TO THE <span className="text-[#caa85d]">WORLD</span>
+            </h1>
+
+            <div className="mt-12 max-w-[560px] space-y-3 text-[20px] leading-[1.9] text-gray-200">
+              <p>우리는 크리에이터의 가능성을 발견하고,</p>
+              <p>성장과 수익, 글로벌 확장까지 함께 설계하는</p>
+
+              <p className="font-semibold text-[#caa85d]">
                 MCN & ENTERTAINMENT COMPANY
-              </span>
-              입니다.
-            </motion.p>
+                <span className="text-white font-normal">입니다.</span>
+              </p>
+            </div>
 
-            {/* BUTTON */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.8 }}
-              className="mt-16 flex items-center gap-6"
-            >
-              <button className="group flex items-center gap-5 text-[20px] font-semibold tracking-[4px] text-[#caa85d] transition hover:text-white">
-                VIEW MORE
-
-                <div className="h-[1px] w-28 bg-[#caa85d]" />
-
-                <ArrowRight className="transition group-hover:translate-x-2" />
-              </button>
-            </motion.div>
-          </div>
+            <button className="group mt-16 flex items-center gap-6 text-[15px] font-semibold tracking-[3px] text-[#caa85d] transition hover:text-white">
+              VIEW MORE
+              <div className="h-[1px] w-24 bg-[#caa85d] transition group-hover:w-32" />
+              <ArrowRight size={20} />
+            </button>
+          </motion.div>
         </div>
 
-        {/* RIGHT SCROLL */}
-        <div className="absolute right-10 top-1/2 hidden -translate-y-1/2 xl:flex">
+        <div className="absolute right-8 top-1/2 hidden -translate-y-1/2 xl:flex">
           <span className="rotate-90 text-[11px] tracking-[6px] text-[#8f7440]">
             SCROLL
           </span>
         </div>
       </section>
 
-      {/* COMPANY */}
-      <section
-        id="company"
-        className="border-b border-[#1a1a1a] bg-[#050505] py-36"
-      >
-        <div className="mx-auto max-w-[1400px] px-10">
-          <div className="mb-24">
-            <p className="text-[15px] tracking-[5px] text-[#caa85d]">
-              COMPANY
-            </p>
-
-            <h2 className="mt-6 text-[72px] font-black leading-none tracking-[-3px]">
-              ORBIS ENM
-            </h2>
-          </div>
-
-          <div className="grid gap-16 lg:grid-cols-2">
-            <div>
-              <p className="text-[26px] leading-[2] text-gray-300">
-                ORBIS ENM은 콘텐츠와 크리에이터를 중심으로
-                새로운 엔터테인먼트 비즈니스를 구축합니다.
-              </p>
-            </div>
-
-            <div className="space-y-8">
-              <div className="border-l border-[#caa85d] pl-8">
-                <h3 className="text-[20px] font-bold tracking-[2px]">
-                  ENTERTAINMENT
-                </h3>
-
-                <p className="mt-4 text-[17px] leading-[1.9] text-gray-400">
-                  크리에이터 매니지먼트 및 브랜드 전략을 통해
-                  지속 가능한 성장 구조를 만듭니다.
-                </p>
-              </div>
-
-              <div className="border-l border-[#caa85d] pl-8">
-                <h3 className="text-[20px] font-bold tracking-[2px]">
-                  MEDIA
-                </h3>
-
-                <p className="mt-4 text-[17px] leading-[1.9] text-gray-400">
-                  글로벌 플랫폼과 콘텐츠 네트워크를 연결하여
-                  영향력을 확장합니다.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* BUSINESS */}
       <section
         id="business"
-        className="bg-black py-36"
+        className="border-b border-[#1a1a1a] bg-black py-32"
       >
-        <div className="mx-auto max-w-[1500px] px-10">
-          <div className="mb-24">
-            <p className="text-[15px] tracking-[5px] text-[#caa85d]">
-              BUSINESS
-            </p>
+        <div className="mx-auto max-w-[1600px] px-10">
+          <div className="mb-24 grid gap-16 xl:grid-cols-2">
+            <div>
+              <div className="mb-8 flex items-center gap-6">
+                <div className="h-[1px] w-20 bg-[#caa85d]" />
+                <span className="text-[13px] tracking-[4px] text-[#caa85d]">
+                  ABOUT ORBIS ENM
+                </span>
+              </div>
 
-            <h2 className="mt-6 text-[72px] font-black tracking-[-3px]">
-              WHAT WE DO
-            </h2>
+              <h2 className="text-[64px] font-black leading-[1.15] tracking-[-3px]">
+                콘텐츠의 궤도를 바꾸는
+                <br />
+                새로운 엔터테인먼트.
+              </h2>
+            </div>
           </div>
 
-          <div className="grid gap-10 lg:grid-cols-3">
+          <div className="grid gap-10 md:grid-cols-2 xl:grid-cols-5">
             {business.map((item, idx) => {
               const Icon = item.icon
 
@@ -245,57 +160,27 @@ export default function Home() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: idx * 0.1 }}
                   viewport={{ once: true }}
-                  className="group border border-[#1a1a1a] p-10 transition hover:border-[#caa85d]"
+                  className="group border-l border-[#1a1a1a] pl-8"
                 >
                   <Icon
-                    size={46}
+                    size={42}
                     className="text-[#caa85d] transition group-hover:scale-110"
                   />
 
-                  <div className="mt-8 text-[42px] font-black text-[#caa85d]">
+                  <div className="mt-8 text-[38px] font-bold text-[#caa85d]">
                     {item.num}
                   </div>
 
-                  <h3 className="mt-4 text-[18px] font-bold tracking-[2px]">
+                  <h3 className="mt-4 text-[15px] font-bold tracking-[2px]">
                     {item.title}
                   </h3>
 
-                  <p className="mt-5 text-[16px] leading-[1.9] text-gray-400">
+                  <p className="mt-5 text-[14px] leading-[1.9] text-gray-400">
                     {item.text}
                   </p>
                 </motion.div>
               )
             })}
-          </div>
-        </div>
-      </section>
-
-      {/* CONTACT */}
-      <section
-        id="contact"
-        className="border-t border-[#1a1a1a] bg-[#050505] py-36"
-      >
-        <div className="mx-auto max-w-[1200px] px-10 text-center">
-          <p className="text-[15px] tracking-[5px] text-[#caa85d]">
-            CONTACT
-          </p>
-
-          <h2 className="mt-6 text-[72px] font-black tracking-[-3px]">
-            LET’S WORK TOGETHER
-          </h2>
-
-          <p className="mx-auto mt-10 max-w-[800px] text-[22px] leading-[2] text-gray-400">
-            브랜드와 크리에이터를 연결하고,
-            글로벌 엔터테인먼트 비즈니스를 함께 만들어갑니다.
-          </p>
-
-          <div className="mt-16 flex justify-center">
-            <a
-              href="mailto:contact@orbis-enm.com"
-              className="border border-[#caa85d] px-12 py-5 text-[18px] tracking-[3px] text-[#caa85d] transition hover:bg-[#caa85d] hover:text-black"
-            >
-              CONTACT US
-            </a>
           </div>
         </div>
       </section>
