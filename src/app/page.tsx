@@ -35,14 +35,14 @@ export default function Home() {
     <main className="bg-black text-white overflow-hidden">
       {/* HEADER */}
       <header className="fixed top-0 left-0 z-50 w-full border-b border-[#1a1a1a] bg-black/80 backdrop-blur">
-        <div className="mx-auto flex max-w-[1600px] items-center justify-between px-10 py-0">
+        <div className="mx-auto flex max-w-[1600px] items-center justify-between px-10 py-[1px]">
           
           {/* LOGO */}
           <div className="flex items-center">
             <img
               src="/orbis-logo-horizontal.png"
               alt="ORBIS ENM"
-              className="h-[150px] w-auto object-contain"
+              className="h-[170px] w-auto object-contain -my-8"
             />
           </div>
 
