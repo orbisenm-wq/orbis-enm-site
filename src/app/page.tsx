@@ -93,11 +93,11 @@ export default function Home() {
 
             {/* TITLE */}
             <h1 className="mt-10 leading-[0.9] font-black uppercase tracking-[-4px]">
-              <span className="block text-white text-[92px]">
+              <span className="block text-white text-[88px]">
                 CREATORS
               </span>
 
-              <span className="block text-[92px] whitespace-nowrap">
+              <span className="block text-[88px] whitespace-nowrap">
                 <span className="text-white">TO THE </span>
                 <span className="text-[#caa85d]">WORLD</span>
               </span>
