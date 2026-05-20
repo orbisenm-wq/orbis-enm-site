@@ -92,7 +92,7 @@ export default function Home() {
             </div>
 
             {/* TITLE */}
-            <h1 className="mt-10 leading-[0.9] font-black uppercase tracking-[-4px]">
+            <h1 className="hero-title mt-10 leading-[0.9] uppercase tracking-[-4px]">
               <span className="block text-white text-[88px]">
                 CREATORS
               </span>
