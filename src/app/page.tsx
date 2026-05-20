@@ -42,7 +42,7 @@ export default function Home() {
             <img
               src="/orbis-logo-horizontal.png"
               alt="ORBIS ENM"
-              className="h-[150px] w-auto object-contain"
+              className="h-[170px] w-auto object-contain"
             />
           </div>
 
