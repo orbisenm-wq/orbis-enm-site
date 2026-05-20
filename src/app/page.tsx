@@ -49,14 +49,14 @@ export default function Home() {
 
       {/* HEADER */}
       <header className="fixed top-0 left-0 z-50 w-full border-b border-[#1a1a1a] bg-black/80 backdrop-blur">
-        <div className="mx-auto flex max-w-[1600px] items-center justify-between px-8 py-5">
+        <div className="mx-auto flex max-w-[1600px] items-center justify-between px-8 py-4">
 
           {/* LOGO */}
           <div className="flex items-center">
             <img
               src="/orbis-logo-horizontal.png"
               alt="ORBIS ENM"
-              className="h-[64px] w-auto object-contain"
+              className="h-[88px] w-auto object-contain"
             />
           </div>
 
@@ -108,10 +108,15 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/55" />
 
         {/* CONTENT */}
-        <div className="relative z-10 mx-auto flex w-full max-w-[1600px] items-center justify-between px-10 pt-24">
+        <div className="relative z-10 mx-auto grid w-full max-w-[1600px] grid-cols-1 gap-16 px-10 pt-[140px] pb-[100px] lg:grid-cols-2">
 
           {/* LEFT TEXT */}
-          <div className="max-w-[720px]">
+          <motion.div
+            initial={{ opacity: 0, y: 70 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="flex flex-col justify-center"
+          >
 
             <div className="mb-10 flex items-center gap-6">
               <div className="h-[1px] w-24 bg-[#caa85d]" />
@@ -120,13 +125,13 @@ export default function Home() {
               </span>
             </div>
 
-            <h1 className="text-[110px] font-black leading-[0.92] tracking-[-5px]">
+            <h1 className="text-[92px] font-black leading-[0.95] tracking-[-4px]">
               CREATORS
               <br />
               TO THE <span className="text-[#caa85d]">WORLD</span>
             </h1>
 
-            <div className="mt-12 max-w-[520px] space-y-4 text-[31px] leading-[1.8] text-gray-200">
+            <div className="mt-12 max-w-[560px] space-y-3 text-[20px] leading-[1.9] text-gray-200">
               <p>우리는 크리에이터의 가능성을 발견하고,</p>
               <p>성장과 수익, 글로벌 확장까지 함께 설계하는</p>
 
@@ -144,10 +149,7 @@ export default function Home() {
               <ArrowRight size={20} />
             </button>
 
-          </div>
-
-          {/* RIGHT EMPTY */}
-          <div className="hidden xl:block w-[45%]" />
+          </motion.div>
 
         </div>
 
