@@ -1,0 +1,3 @@
+import Header from '@/components/Header'
+import ContactForm from '@/components/ContactForm'
+export default function Apply(){return <main className="min-h-screen bg-black text-white"><Header/><section className="px-6 md:px-[82px] pt-40 pb-24"><div className="mx-auto grid max-w-[1200px] gap-12 lg:grid-cols-2"><div><p className="mb-5 text-xs font-black tracking-[.2em] text-orbis-gold">CREATOR APPLICATION</p><h1 className="text-5xl md:text-7xl font-black leading-tight">CREATORS<br/><span className="text-orbis-gold">TO THE WORLD.</span></h1><p className="mt-8 text-white/60 leading-8">Orbis ENM과 함께 성장할 크리에이터를 기다립니다. 채널 URL 또는 SNS 계정을 함께 남겨주세요.</p></div><ContactForm type="creator"/></div></section></main>}
