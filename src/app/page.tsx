@@ -45,27 +45,31 @@ text: '글로벌 시장 진출 및 해외 네트워크 구축을 지원합니다
 ]
 
 export default function Home() {
-return ( <main className="bg-black text-white overflow-hidden">
-{/* HEADER */} <header className="fixed top-0 left-0 z-50 w-full border-b border-[#1a1a1a] bg-black/80 backdrop-blur"> <div className="mx-auto flex max-w-[1600px] items-center justify-between px-8 py-5"> <div className="flex items-center gap-4"> <img
-           src="/orbis-logo.png"
-           alt="ORBIS ENM"
-           className="w-[120px]"
-         /> </div>
+<header className="fixed top-0 left-0 z-50 w-full border-b border-[#1a1a1a] bg-black/80 backdrop-blur">
+  <div className="mx-auto flex max-w-[1600px] items-center justify-between px-8 py-5">
 
-```
-      <nav className="hidden gap-14 text-[13px] font-semibold tracking-[2px] md:flex">
-        <a href="#home" className="text-[#caa85d]">
-          HOME
-        </a>
-        <a href="#company">COMPANY</a>
-        <a href="#business">BUSINESS</a>
-        <a href="#creators">CREATORS</a>
-        <a href="#contact">CONTACT</a>
-      </nav>
-
-      <div className="text-[#caa85d] text-3xl">≡</div>
+    <div className="flex items-center">
+      <img
+        src="/orbis-logo-horizontal.png"
+        alt="ORBIS ENM"
+        className="h-[42px] w-auto object-contain"
+      />
     </div>
-  </header>
+
+    <nav className="hidden gap-14 text-[13px] font-semibold tracking-[2px] md:flex">
+      <a href="#home" className="text-[#caa85d]">HOME</a>
+      <a href="#company">COMPANY</a>
+      <a href="#business">BUSINESS</a>
+      <a href="#creators">CREATORS</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+
+    <div className="text-[#caa85d] text-3xl">☰</div>
+
+  </div>
+</header>
+
+
 
   {/* HERO */}
   <section
