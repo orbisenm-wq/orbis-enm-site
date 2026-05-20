@@ -48,7 +48,7 @@ const business = [
 export default function Home() {
   return (
     <main className="bg-black text-white overflow-hidden">
-      
+
       {/* HEADER */}
       <header className="fixed top-0 left-0 z-50 w-full border-b border-[#1a1a1a] bg-black/80 backdrop-blur">
         <div className="mx-auto flex max-w-[1600px] items-center justify-between px-8 py-6">
@@ -63,19 +63,23 @@ export default function Home() {
           </div>
 
           {/* NAV */}
-          <nav className="hidden md:flex gap-16 text-[16px] font-semibold tracking-[3px]">
-            <a href="#home" className="text-[#caa85d] transition hover:text-white">
+          <nav className="hidden gap-14 text-[15px] font-semibold tracking-[2px] md:flex">
+            <a href="#home" className="text-[#caa85d]">
               HOME
             </a>
+
             <a href="#company" className="transition hover:text-[#caa85d]">
               COMPANY
             </a>
+
             <a href="#business" className="transition hover:text-[#caa85d]">
               BUSINESS
             </a>
+
             <a href="#creators" className="transition hover:text-[#caa85d]">
               CREATORS
             </a>
+
             <a href="#contact" className="transition hover:text-[#caa85d]">
               CONTACT
             </a>
@@ -83,7 +87,7 @@ export default function Home() {
 
           {/* MENU */}
           <button className="text-[#caa85d]">
-            <Menu size={30} strokeWidth={1.5} />
+            <Menu size={28} strokeWidth={1.5} />
           </button>
         </div>
       </header>
@@ -94,7 +98,7 @@ export default function Home() {
         className="relative flex min-h-screen items-center overflow-hidden border-b border-[#1a1a1a]"
       >
 
-        {/* BG IMAGE */}
+        {/* BACKGROUND */}
         <div className="absolute inset-0 overflow-hidden opacity-80">
           <img
             src="/stage-bg.png"
@@ -103,32 +107,37 @@ export default function Home() {
           />
         </div>
 
-        {/* OVERLAY */}
+        {/* DARK OVERLAY */}
         <div className="absolute inset-0 bg-black/55" />
 
         {/* CONTENT */}
         <div className="relative z-10 mx-auto flex w-full max-w-[1600px] items-center justify-between px-20 pt-32">
 
-          {/* LEFT */}
+          {/* LEFT TEXT */}
           <motion.div
             initial={{ opacity: 0, y: 70 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="max-w-[650px]"
+            className="max-w-[700px]"
           >
 
+            {/* TOP LABEL */}
             <div className="mb-10 flex items-center gap-6">
-              <div className="h-[1px] w-[130px] bg-[#caa85d]" />
-              <span className="text-[18px] tracking-[7px] text-[#caa85d]">
+              <div className="h-[1px] w-[110px] bg-[#caa85d]" />
+
+              <span className="text-[18px] tracking-[6px] text-[#caa85d]">
                 ENTERTAINMENT & MEDIA
               </span>
             </div>
 
+            {/* TITLE */}
             <h1 className="leading-[0.95] font-black tracking-[-4px]">
-              <div className="text-[110px]">CREATORS</div>
+              <div className="text-[108px]">
+                CREATORS
+              </div>
 
-              <div className="flex items-end gap-5">
-                <span className="text-[110px] text-white">
+              <div className="flex items-end gap-6">
+                <span className="text-[108px] text-white">
                   TO THE
                 </span>
 
@@ -138,8 +147,10 @@ export default function Home() {
               </div>
             </h1>
 
+            {/* DESC */}
             <div className="mt-14 space-y-5 text-[24px] leading-[1.9] text-gray-100">
               <p>우리는 크리에이터의 가능성을 발견하고,</p>
+
               <p>성장과 수익, 글로벌 확장까지 함께 설계하는</p>
 
               <p className="font-semibold text-[#caa85d]">
@@ -147,10 +158,11 @@ export default function Home() {
               </p>
             </div>
 
+            {/* BUTTON */}
             <button className="group mt-16 flex items-center gap-7 text-[18px] font-semibold tracking-[4px] text-[#caa85d]">
               VIEW MORE
 
-              <div className="h-[1px] w-[160px] bg-[#caa85d] transition-all duration-300 group-hover:w-[220px]" />
+              <div className="h-[1px] w-[150px] bg-[#caa85d] transition-all duration-300 group-hover:w-[210px]" />
 
               <ArrowRight
                 size={28}
@@ -160,8 +172,8 @@ export default function Home() {
           </motion.div>
 
           {/* RIGHT SCROLL */}
-          <div className="hidden xl:flex flex-col items-center gap-8 pr-6">
-            <div className="rotate-90 text-[12px] tracking-[8px] text-[#caa85d]">
+          <div className="hidden xl:flex flex-col items-center gap-8 pr-4">
+            <div className="rotate-90 text-[11px] tracking-[7px] text-[#caa85d]">
               SCROLL
             </div>
 
@@ -287,7 +299,7 @@ export default function Home() {
           </p>
 
           <div className="mt-16 flex flex-col items-center gap-5 text-[20px] text-white">
-            <div>coingallery.corp@gmail.com</div>
+            <div>orbis.enm@gmail.com</div>
 
             <div className="flex items-center gap-3 text-[#caa85d]">
               <ShieldCheck size={22} />
