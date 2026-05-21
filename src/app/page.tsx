@@ -202,10 +202,19 @@ export default function Home() {
         <h2 className="text-[70px] font-black tracking-[-2px]">
           CONTACT
         </h2>
+<div className="mt-16 border-t border-[#1a1a1a] pt-10 text-center text-[15px] leading-[2.2] text-gray-500">
+  <p className="font-semibold text-gray-300">
+    (주) ORBIS ENM
+  </p>
 
-        <p className="mt-10 text-[24px] text-gray-300">
-          orbis.enm@gmail.com
-        </p>
+  <p className="mt-6">
+    이메일 l orbis.enm@gmail.com
+  </p>
+
+  <p className="mt-2">
+    주소 l 서울특별시 강남구 청담동 26-18 , 1층
+  </p>
+</div>
       </section>
     </main>
   )
