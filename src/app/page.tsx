@@ -194,28 +194,145 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CONTACT */}
-      <section
-        id="contact"
-        className="bg-black px-10 py-40 text-center"
-      >
-        <h2 className="text-[70px] font-black tracking-[-2px]">
-          CONTACT
-        </h2>
-<div className="mt-16 border-t border-[#1a1a1a] pt-10 text-center text-[15px] leading-[2.2] text-gray-500">
-  <p className="font-semibold text-gray-300">
-    (주) ORBIS ENM
-  </p>
+     {/* CONTACT */}
+<section
+  id="contact"
+  className="bg-black px-10 py-40"
+>
+  <div className="mx-auto max-w-[1400px]">
+    <h2 className="text-[44px] font-black leading-[1.35] tracking-[-2px] text-white md:text-[58px]">
+      <span className="text-[#caa85d]">크리에이터, 에이전트, 비즈니스 관련 업무 등</span>
+      <br />
+      문의를 원하시면 이곳에 글을 남겨주세요.
+    </h2>
 
-  <p className="mt-6">
-    이메일 l orbis.enm@gmail.com
-  </p>
+    <p className="mt-10 text-[20px] leading-[1.8] text-gray-300">
+      신청 양식에 맞춰 문의 주시면 담당자가 빠른 시일 내에 연락 드리도록 하겠습니다.
+    </p>
 
-  <p className="mt-2">
-    주소 l 서울특별시 강남구 청담동 26-18 , 1층
-  </p>
-</div>
-      </section>
+    <div className="mt-20">
+      <p className="mb-5 text-[15px] font-bold text-white">
+        문의 유형 <span className="text-[#caa85d]">*</span>
+      </p>
+
+      <div className="flex flex-wrap gap-3">
+        {["크리에이터", "에이전트", "비즈니스"].map((type, idx) => (
+          <button
+            key={idx}
+            className={`rounded-full border px-10 py-3 text-[14px] font-bold transition ${
+              idx === 0
+                ? "border-white bg-white text-black"
+                : "border-white text-white hover:bg-white hover:text-black"
+            }`}
+          >
+            {type}
+          </button>
+        ))}
+      </div>
+    </div>
+
+    <form className="mt-12 grid gap-10 md:grid-cols-2">
+      <div>
+        <label className="text-[16px] font-bold text-white">
+          이름 <span className="text-[#caa85d]">*</span>
+        </label>
+        <input
+          type="text"
+          placeholder="내용을 입력해 주세요."
+          className="mt-5 w-full border-b border-gray-700 bg-transparent pb-4 text-white outline-none placeholder:text-gray-500 focus:border-[#caa85d]"
+        />
+      </div>
+
+      <div>
+        <label className="text-[16px] font-bold text-white">
+          연락처 <span className="text-[#caa85d]">*</span>
+        </label>
+        <input
+          type="text"
+          placeholder="내용을 입력해 주세요."
+          className="mt-5 w-full border-b border-gray-700 bg-transparent pb-4 text-white outline-none placeholder:text-gray-500 focus:border-[#caa85d]"
+        />
+      </div>
+
+      <div>
+        <label className="text-[16px] font-bold text-white">
+          생년월일 <span className="text-[#caa85d]">*</span>
+        </label>
+        <input
+          type="text"
+          placeholder="내용을 입력해 주세요."
+          className="mt-5 w-full border-b border-gray-700 bg-transparent pb-4 text-white outline-none placeholder:text-gray-500 focus:border-[#caa85d]"
+        />
+      </div>
+
+      <div>
+        <label className="text-[16px] font-bold text-white">
+          인스타, 틱톡 등 개인 SNS <span className="text-[#caa85d]">*</span>
+        </label>
+        <input
+          type="text"
+          placeholder="내용을 입력해 주세요."
+          className="mt-5 w-full border-b border-gray-700 bg-transparent pb-4 text-white outline-none placeholder:text-gray-500 focus:border-[#caa85d]"
+        />
+      </div>
+
+      <div className="md:col-span-2">
+        <label className="text-[16px] font-bold text-white">
+          문의 내용 <span className="text-[#caa85d]">*</span>
+        </label>
+        <textarea
+          placeholder="내용을 입력해 주세요."
+          rows={4}
+          className="mt-5 w-full resize-none border-b border-gray-700 bg-transparent pb-4 text-white outline-none placeholder:text-gray-500 focus:border-[#caa85d]"
+        />
+      </div>
+
+      <div className="md:col-span-2">
+        <label className="flex items-center gap-3 text-[14px] font-bold text-white">
+          <input type="checkbox" className="h-4 w-4" />
+          개인정보 수집 및 이용에 동의합니다.
+        </label>
+      </div>
+
+      <div className="flex justify-center md:col-span-2">
+        <button
+          type="button"
+          className="mt-8 flex h-[130px] w-[130px] items-center justify-center rounded-full border border-white text-[15px] font-bold text-white transition hover:border-[#caa85d] hover:bg-[#caa85d] hover:text-black"
+        >
+          문의보내기
+        </button>
+      </div>
+    </form>
+
+    <div className="mt-28 grid gap-10 border-t border-[#1a1a1a] pt-12 md:grid-cols-2">
+      <div>
+        <h3 className="text-[20px] font-bold text-white">
+          ADDRESS
+        </h3>
+        <p className="mt-5 text-[16px] leading-[1.8] text-gray-400">
+          서울특별시 강남구 청담동 28-18 , 101호
+        </p>
+      </div>
+
+      <div>
+        <h3 className="text-[20px] font-bold text-white">
+          E-MAIL
+        </h3>
+        <p className="mt-5 text-[16px] leading-[1.8] text-gray-400">
+          orbis.enm@gmail.com
+        </p>
+      </div>
+    </div>
+
+    <div className="mt-16 border-t border-[#1a1a1a] pt-10 text-[15px] leading-[2.2] text-gray-500">
+      <p className="font-semibold text-gray-300">
+        (주) ORBIS ENM
+      </p>
+      <p>이메일 l orbis.enm@gmail.com</p>
+      <p>주소 l 서울특별시 강남구 청담동 28-18 , 101호</p>
+    </div>
+  </div>
+</section>
     </main>
   )
 }
