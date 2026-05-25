@@ -319,7 +319,7 @@ export default function Home() {
           E-MAIL
         </h3>
         <p className="mt-5 text-[16px] leading-[1.8] text-gray-400">
-          orbis.enm@gmail.com
+          admin@orbis-enm.com
         </p>
       </div>
     </div>
@@ -328,7 +328,7 @@ export default function Home() {
       <p className="font-semibold text-gray-300">
         (주) ORBIS ENM
       </p>
-      <p>이메일 l orbis.enm@gmail.com</p>
+      <p>이메일 l admin@orbis-enm.com</p>
       <p>주소 l 서울특별시 강남구 청담동 28-18 , 101호</p>
     </div>
   </div>
