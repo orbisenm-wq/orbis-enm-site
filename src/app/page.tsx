@@ -310,7 +310,7 @@ export default function Home() {
           ADDRESS
         </h3>
         <p className="mt-5 text-[16px] leading-[1.8] text-gray-400">
-          서울특별시 강남구 청담동 28-18 , 101호
+          서울특별시 강남구 청담동 26-18 , 101호
         </p>
       </div>
 
@@ -329,7 +329,7 @@ export default function Home() {
         (주) ORBIS ENM
       </p>
       <p>이메일 l admin@orbis-enm.com</p>
-      <p>주소 l 서울특별시 강남구 청담동 28-18 , 101호</p>
+      <p>주소 l 서울특별시 강남구 청담동 26-18 , 101호</p>
     </div>
   </div>
 </section>
